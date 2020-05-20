@@ -29,7 +29,7 @@ fn run(args: &[&str]) -> Result<String, std::io::Error> {
     Ok(String::from_utf8(out.stdout).unwrap().trim().to_string())
 }
 
-/// This method reads info from Git, namely tags, branch, and revision
+/// xThis method reads info from Git, namely tags, branch, and revision
 fn read_git_info() -> Result<(), std::io::Error> {
     // The exact tag for the current commit, can be empty when
     // the current commit doesn't have an associated tag
